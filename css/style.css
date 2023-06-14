@@ -1,0 +1,14 @@
+body {
+    background-image: radial-gradient(lightsteelblue, lightskyblue, skyblue,  cadetblue);
+    background-color: blue
+}
+
+.mapdiv {
+    width: 30%;
+    margin: auto;
+}
+.mapdiv path {
+    fill: #234f1e;
+    stroke: #1d301d;
+    stroke-width: 2px;
+}
