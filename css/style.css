@@ -1,14 +1,76 @@
 body {
     background-image: radial-gradient(lightsteelblue, lightskyblue, skyblue,  cadetblue);
-    background-color: blue
+    
+}
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 10%;
+  background-color: #333333;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  color: white;
+font-family: sans-serif;
+}
+
+li a {
+  display: block;
+  color: #fff;
+  padding: 15px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
 }
 
 .mapdiv {
     width: 30%;
     margin: auto;
+    
 }
 .mapdiv path {
     fill: #234f1e;
     stroke: #1d301d;
     stroke-width: 2px;
 }
+
+.mapdiv :hover {
+    fill:#82d682;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #5f9ea0;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #152238;
+}
+
