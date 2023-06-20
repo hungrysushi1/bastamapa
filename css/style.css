@@ -93,7 +93,7 @@ header {
     justify-content: center;
 }
 
-@media (max-width: 580px) {
+@media (max-width: 578px) {
     .navbar .links {
         display: none;
     }
