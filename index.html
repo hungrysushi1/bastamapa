@@ -2,17 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SVG map</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<header>
+    <div class="navbar">
+        <div class="logo"><a href="#">Basta Mapa</a></div>
+        <ul class="links">
+            <li><a href="Home">Home</a></li>
+            <li><a class="active"href="Home">Map</a></li>
+            <li><a href="Home">Preservation</a></li>
+            <li><a href="Home">Game</a></li>
+            <li><a href="Home">Members</a></li>
+        </ul>
+        <div class="toggle_btn">
+               <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="dropdown">
+            <li><a href="Home">Home</a></li>
+            <li><a class="active"href="Home">Map</a></li>
+            <li><a href="Home">Preservation</a></li>
+            <li><a href="Home">Game</a></li>
+            <li><a href="Home">Members</a></li>
+            </div>
+    </div>
+</header>
+<script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown')
+    
+    toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+        
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+        }
 
-<ul>
-  <li><a href="#home">Home</a></li>
-  <li><a class="active" href="#news">Map</a></li>
-  <li><a href="#contact">Preventions</a></li>
-  <li><a href="#about">Members</a></li>
-</ul>
+</script>
     <div class="mapdiv">
         <svg version="1.2" viewbox="0 0 1000 1722" xmlns="http://www.w3.org/2000/svg">
 <a xlink:title="Tawi-Tawi" xlink:href="https://www.timeanddate.com/weather/@1689920">
